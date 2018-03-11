@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://use.fontawesome.com/0f942f413c.js"></script>
+</head>
+<body>
+  <main class="columns">
+      <div class="column is-6 is-offset-3">
+      <div id="title" class="notification">
+        <h1 class="title"> Hoodie Drawstring</h1>
+    <div class="box">
+  <article class="media">
+    <div class="media-left">
+      <select id="filters" multiple is-small size="5" onChange="filter_select()">
+      <option value="highpass">high</option>
+      <option value="lowpass">bass</option>
+      <option value="bandpass">band</option>
+      <option value="peaking">peaking</option>
+      <option value="allpass">allpass</option>
+      </select>
+    </div>
+    <div class="media-content">
+      <div class="content">
+        <div id="name"></div>
+      </div>
+      <nav class="level is-mobile">
+        <div class="level-left">
+          <span>
+              <button  onClick="start();"class="stop button is-medium is-text">start</button>
+          </span>
+          <span>
+            <button  onClick="stop();"class="stop button  is-medium is-text">stop</button>
+          </span>
+          <input id="volume" type="range" min="0" max="1" step="0.01" value="0.5" onchange="getValue()">
+        </div>
+      </nav>
+    </div>
+  </article>
+</div>
+</main>
+</body>
+</html>

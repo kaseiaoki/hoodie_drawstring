@@ -1,0 +1,27 @@
+.audioPlayer{
+    position: relative;
+    display: inline-block;
+    padding:32px;
+    background:#f8f8f8;
+    border-radius: 4px;
+    border: solid 1px #eee;
+}
+.audioPlayer__controller > *{
+    display: inline-block;
+    vertical-align: middle;
+}
+.audioPlayer__status{
+    padding: 2px 16px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #aaa;
+}
+/* @font-face {
+	font-family: 'MyFont';
+	src: url(Mostwasted.ttf);
+}
+
+h1 {
+	font-family: MyFont;
+} */
